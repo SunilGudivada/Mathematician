@@ -1,40 +1,431 @@
 <html>
+
 <head>
-<title></title>
-<meta name="description" content="Axiom">
-<meta http-equiv="cache-control" content="max-age=0" />
+    <title></title>
+    <meta name="description" content="Axiom">
+    <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
     <link rel="shortcut icon" href="1545998_691370894274334_5139618401896529136_n.png">
+    <script type="text/javascript" src="jquery.min.js">
+    </script>
+
+    <script>
+        $(function() {
+
+            var people = [{
+  "Mathematicians" : [ 
+    {
+      "Mathematician": "Archimedes",
+      "Contribution": "His achievements include deriving an accurate approximation of pi and creating a system using exponentiation for expressing very large numbers. Archimedes is famous for his discovery of the relation between the surface and volume of a sphere and its circumscribing cylinder."
+   },
+   {
+      "Mathematician": "Leonhard Euler",
+      "Contribution": " First to introduce symbol i for ?-1.A revolutionary thinker in the fields of geometry, trigonometry, calculus, differential equations, number theory. And notational systems�including the utilization of ? and f(x)among a legion of other accomplishments."
+   },
+   {
+      "Mathematician": "Aryabhatta",
+      "Contribution": "Great Mathematician and Astronomer. Famous for his discovery of zero and his Contributions in algebra, trigonometry,quadratic equations. His work  Aryabhatiya,contains mathematical and astronomical theories that have been revealed to be quite accurate in modern mathematics.He calculated Pi as 3.1416 close to the actual value Pi (3.14159)."
+   },
+   {
+      "Mathematician": "Muhammad ibn Musa al-Khowarizmi",
+      "Contribution": "His book  Algebra  was the first book on the systematic solutions of linear and quadratic equations The word algorithm is derived from his name . "
+   },
+   {
+      "Mathematician": "Sir Ronald A.Fisher",
+      "Contribution": "Known as the father of modern statistics.He applied statistics to various diversified fields like Genetics, Biometry, Agriculture,etc.He was an English statistician and biologist who used mathematics to combine Mendelian genetics and natural selection. This contributed to the revival of Darwinism in the early 20th century "
+   },
+   {
+      "Mathematician": "Charles Babbage ",
+      "Contribution": "Father of modern computer. His machines  Difference Engine , Analytical Engine were essentially the first computers in history. Difference Engine compiles mathematical tables. Analytical Engine uses loops of punched cards to control an automatic calculator, which could make decisions based on the results of previous computations."
+   },
+   {
+      "Mathematician": "Erno Rubik ",
+      "Contribution": "He is best known for the invention of mechanical puzzles including Rubik's Cube (1974), Rubik's Magic, Rubik's Magic: Master Edition, and Rubik's Snake. 43252003274489856000  Chill,this is the number of possible Rubik puzzle configurations "
+   },
+   {
+      "Mathematician": "Dattathreya Ramachandra Kaprekar",
+      "Contribution": "He was an Indian recreational mathematician who described several classes of natural numbers including the Kaprekar, Harshad and Self numbers and discovered the Kaprekar constant, named after him.Kaprekar's constant for 4 digit no.  is 6174,For 3 digit number  it is 495. "
+   },
+   {
+      "Mathematician": "Lakkoju Sanjeevaraya Sharma",
+      "Contribution": "Proved that his disability will not effect his passion. He has prepared Indian Calendar for 4000 years.He was born blind and gave many Mathematical Avadhanams (Ganitavadhanams) and surprised the elite and educated people."
+   },
+   {
+      "Mathematician": "Paul Erdos",
+      "Contribution": "A Hungarian mathematician known for his work in number theory and combinatorics.Of all the numbers, he consider prime numbers as his best friends. well known for  Erdos number . most prolific mathematician of the 20th century, in terms of both the number of problems he solved and the number of problems he convinced others to tackle."
+   },
+   {
+      "Mathematician": "George Boole",
+      "Contribution": "He worked in the fields of differential equations and algebraic logic, and is best known as the author of The Laws of Thought (1854) which contains Boolean algebra. Boolean logic is credited with laying the foundations for the information age."
+   },
+   {
+      "Mathematician": "Srinivasa Ramanujan ",
+      "Contribution": "During his short life, Ramanujan independently compiled nearly 3,900 results (mostly identities and equations).Mostly known for Hardy Ramanujan number. Gave a formula for length of ellipse :?[3(a+b)-(square root of(3a+b)(a+3b))] which is a close approximation of actual length. There is a biopic on him named  The man who knew infinity  "
+   },
+   {
+      "Mathematician": "Varahamihira",
+      "Contribution": "His prominent mathematical work includes the discovery of some trigonometric formulas like sine-cosine identity;(1-cos2x) =2(sinx)^2 .He also defined the algebraic properties of zero & negative numbers. He was among the first mathematicians to discover a version of Pascal�s triangle as we know it today."
+   },
+   {
+      "Mathematician": "K. R. Parthasarathy",
+      "Contribution": "Kalyanapuram Rangachari Parthasarathy  is professor emeritus at the Indian Statistical Institute and a pioneer of quantum stochastic calculus.He is the namesake of Kostant�Parthasarathy�Ranga Rao�Varadarajan determinants along with Bertram Kostant, R. Ranga Rao and Veeravalli S. Varadarajan which they introduced in 1967."
+   },
+   {
+      "Mathematician": "Pingala",
+      "Contribution": "Pingala (in Chanda???stra 8.23) has assigned some combinations of zero and one to represent various numbers, much in the same way as the present day computer programming procedures.He used Permutations and combinations in his book  Chandassastra  to determine no.  of combinations of given number of letters. "
+   },
+   {
+      "Mathematician": "Thales",
+      "Contribution": "Thales used geometry to solve problems such as calculating the height of pyramids and the distance of ships from the shore.He is credited with the first use of deductive reasoning applied to geometry, by deriving four corollaries to Thales� Theorem."
+   },
+   {
+      "Mathematician": "Pythagoras ",
+      "Contribution": "Pythagoras has commonly been given credit for Pythagorean theorem which  states that in a right-angled triangle the area of the square on the hypotenuse (the side opposite the right angle) is equal to the sum of the areas of the squares of the other two sides."
+   },
+   {
+      "Mathematician": "Hipparchus",
+      "Contribution": " Hipparchus is considered the founder of trigonometry, but is more famous for his discovery of precession of the equinoxes."
+   },
+   {
+      "Mathematician": "Brahmagupta",
+      "Contribution": "Brahamagupta is the man who gave the world the concept of negative numbers and zero. He also proposed rules for solving simultaneous and quadratic equations. Recognized negative roots. Brahamagupta is the founder of �Numerical Analysis�, a branch of higher mathematics. He was the one to identify that x�- y� = (x+y)(x-y)."
+   },
+   {
+      "Mathematician": "Erasthosthenes",
+      "Contribution": "One of his major accomplishments in mathematics is his creation of a sieve that determines prime numbers up to any given limit. This sieve is called, the Sieve of Eratosthenes"
+   },
+   {
+      "Mathematician": "Bhaskaracharya",
+      "Contribution": " He was bestowed an apt title by Ganesh Daivadnya for his genius work in Astronomy and Mathematics calling Bhaskaracharya �Ganakachakra chudamani� which means �a Gem among all the calculators of astronomical phenomena.His famous works Lilavati and Bijaganita remain unparalleled works by substantiating his profound intelligence. "
+   },
+   {
+      "Mathematician": "Leonardo of Pisa(Fibonacci)",
+      "Contribution": " He also introduced Europe to the sequence of Fibonacci numbers, which he used as an example in Liber Abaci.Fibonacci sequence describes various natural structures including our finger prints. "
+   },
+   {
+      "Mathematician": "Democritus ",
+      "Contribution": "Democritus was one of the first to observe that a cone or pyramid has one-third the volume of a cylinder or prism respectively with the same base and height. "
+   },
+   {
+      "Mathematician": "Plato",
+      "Contribution": "Plato was also one of ancient Greece�s most important patrons of mathematics. Well known for  Platonic solids  which were 5 regular 3d symmetrical structures (he considered them as basis of whole universe).  he was convinced that geometry was the key to unlocking the secrets of the universe."
+   },
+   {
+      "Mathematician": "Euclid ",
+      "Contribution": "Known as the  father of geometry , Euclid�s Elements has been used as the main text for teaching history of mathematics from its publication till 20th century."
+   },
+   {
+      "Mathematician": "John Napier ",
+      "Contribution": " He wasnicknamed Marvellous Merchiston .A Scottish landowner known as a mathematician, physicist, and astronomer.He was well known for logarithms, Napier's bones, Decimal notations "
+   },
+   {
+      "Mathematician": "Rene Des Cartes",
+      "Contribution": "His famous work is introduction of Cartesian geometry i.e., a fusion of geometry and algebra"
+   },
+   {
+      "Mathematician": "Blaise Pascal",
+      "Contribution": "After three years of effort and 50 prototypes, he built 20 finished machines (called Pascal's calculators and later Pascalines) over the following 10 years, establishing him as one of the first two inventors of the mechanical calculator.well known for  Pascal Triangle .The triangle demonstrates many mathematical properties in addition to binomial coefficients. "
+   },
+   {
+      "Mathematician": "Isaac Newton ",
+      "Contribution": "His discovery of calculus led the way to more powerful methods of solving mathematical problems. Derived shape of orbits using calculus under an assumption that the gravitational force goes as the inverse square of distance "
+   },
+   {
+      "Mathematician": "Jacob Bernoulli ",
+      "Contribution": "He was an early proponent of Leibnizian calculus and had sided with Leibniz during the Leibniz�Newton calculus controversy.his most important Contribution was in the field of probability, where he derived the first version of the law of large numbers in his work Ars Conjectandi."
+   },
+   {
+      "Mathematician": "Johann Bernoulli ",
+      "Contribution": "Development of infinitesimal calculus,Catenary solution, Brachistochrone Problem.He is known for his Contributions to infinitesimal calculus and educating Leonhard Euler in the pupil's youth."
+   },
+   {
+      "Mathematician": "Abraham De Moivre",
+      "Contribution": "Well known for De Moivre's formula which links complex numbers and geometry.  The Doctrine of Chances  was a book written by him on probabilitytheory. He is famous for his work on the normal distribution and probabilitytheory. Pioneered the development of Analytic geometry. "
+   },
+   {
+      "Mathematician": "Pierre-Simon Laplace ",
+      "Contribution": "Known for Laplace transform,Laplace equation etc. his five-volume M�canique C�leste (Celestial Mechanics) has summarized and extended work of his predecessors. This work translated the geometric study of classical mechanics to one based on calculus, opening up a broader range of problems. In statistics, the Bayesian interpretation of probability was developed mainly by Laplace."
+   },
+   {
+      "Mathematician": "Joseph Fourier ",
+      "Contribution": "He exerted strong influence on mathematical physics through his Th�orie analytique de la chaleur (1822; The Analytical Theory of Heat). He showed how the conduction of heat in solid bodies may be analyzed in terms of infinite mathematical series now called by his name, the Fourier series. "
+   },
+   {
+      "Mathematician": "Carl Friedrich Gauss ",
+      "Contribution": "regarded as one of the greatest mathematicians of all time for his Contributions to number theory, geometry, probability theory, geodesy etc. Proved that every polynomial equation has Atleast one root. "
+   },
+   {
+      "Mathematician": "Augustin Louis Cauchy",
+      "Contribution": "Defined integral as a limit of sum.Introduced Cauchy sum for a continuous function f on [a, b]"
+   },
+   {
+      "Mathematician": "Bernhard Riemann ",
+      "Contribution": "Refined and clarified the notion of integral i.e., as Riemann integral(By verifying the convergence of Cauchy Sums)"
+   },
+   {
+      "Mathematician": "George Cantor ",
+      "Contribution": "He invented set theory, which has become a fundamental theory in mathematics.In one of his earliest papers,he proved that the set of real numbers is  more numerous  than the set of natural numbers; this showed, for the first time, that there exist infinite sets of different sizes."
+   },
+   {
+      "Mathematician": "Albertus Magnus ",
+      "Contribution": "he was known during his lifetime as�doctor universalis�and�doctor expertus�and, late in his life, the term�magnus�was appended to his name."
+   },
+   {
+      "Mathematician": "Augustus De Morgan ",
+      "Contribution": "He formulated�De Morgan's laws�and introduced the term�mathematical induction, making its idea rigorous."
+   },
+   {
+      "Mathematician": "Bertrand Russell ",
+      "Contribution": " His work has had a considerable influence on mathematics, logic, set theory, linguistics, artificial intelligence, cognitive science, computer science and philosophy, especially the philosophy of language, epistemology, and metaphysics."
+   },
+   {
+      "Mathematician": "G. H. Hardy",
+      "Contribution": "English mathematician, known for his achievements in number theory and mathematical analysis."
+   },
+   {
+      "Mathematician": "Arthur Cayley",
+      "Contribution": " postulated the Cayley�Hamilton theorem�that every square matrix is a root of its own characteristic polynomial, and verified it for matrices of order 2 and 3."
+   },
+   {
+      "Mathematician": "Brook Taylor ",
+      "Contribution": "best known for Taylor's theorem�and the�Taylor series."
+   },
+   {
+      "Mathematician": "David Hilbert ",
+      "Contribution": "Hilbert discovered and developed a broad range of fundamental ideas in many areas, including�invariant theory�and the�axiomatization of geometry. He also formulated the theory of�Hilbert spaces,[3]�one of the foundations of�functional analysis."
+   },
+   {
+      "Mathematician": "Gottfried Leibnitz ",
+      "Contribution": "German polymath and philosopher who occupies a prominent place in the history of mathematics�and the�history of philosophy,having developed�differential and integral calculus�independently�of�Isaac Newton."
+   },
+   {
+      "Mathematician": "John Venn ",
+      "Contribution": "introduced the�Venn diagram, used in the fields of�set theory,�probability, logic,�statistics, and�computer science."
+   },
+   {
+      "Mathematician": "John Von Neumann",
+      "Contribution": "�He made major Contributions to a number of fields, including�mathematics�(foundations of mathematics,�functional analysis,�ergodic theory,�geometry,�topology, and�numerical analysis),economics�(game theory),�computing�(Von Neumann architecture,�linear programming,�self-replicating machines,�stochastic computing), and�statistics."
+   },
+   {
+      "Mathematician": "Pierre De Fermat",
+      "Contribution": "He dealt with plane loci,which according to him were collection of points lying in a plane;they are curves,Simplified work of Appollonius by applying algebra to geometry through the use of coordinates. "
+   },
+   {
+      "Mathematician": "Nikolai Ivanovich Lobachevsky",
+      "Contribution": "was a Russian mathematician and geometer, known primarily for his work on hyperbolic geometry, otherwise known as Lobachevskian geometry."
+   },
+   {
+      "Mathematician": "Hypatia of Alexandria (first woman mathematician) ",
+      "Contribution": "wrote commentaries on Euclid's elements, Diophantus's Arithmetica,on Apollonius conics and on Ptolemy's astronomical works"
+   },
+   {
+      "Mathematician": "Shakunthala Devi(Human computer) ",
+      "Contribution": "She was an Indian writer and mental calculator, popularly known as the  human computer .A child prodigy, her talent earned her a place in the 1982 edition of The Guinness Book of World Records.As a writer, Devi wrote a number of books, including novels as well as texts about mathematics, puzzles, and astrology."
+   },
+   {
+      "Mathematician": "Joseph Louis Lagrange ",
+      "Contribution": "His works include �Theory of Analytic Functions�;�Lessons on the Calculus of Functions�;�M�canique analytique�.His early publications, on the propagation of sound and on the concept of maxima and minima were well received.His interest in mathematics was aroused by the chance reading of a memoir by the English astronomer Edmond Halley. "
+   },
+   {
+      "Mathematician": "Karl Weierstrass ",
+      "Contribution": "He gave precise definition of limit.Developed the subject of calculus. "
+   },
+   {
+      "Mathematician": "Parameshwara(mean value theorem) ",
+      "Contribution": "He was the first to describe mean value theorem. "
+   },
+   {
+      "Mathematician": "Michael Rolle",
+      "Contribution": "Introduced and gave first proof of Rolles theorem. "
+   },
+   {
+      "Mathematician": "Mahavira",
+      "Contribution": "Mahavira was a Jain mathematician, who derived the volume of frustum by an infinite procedure. He worked with logarithms in base 2, base 3 and base 4. "
+   },
+   {
+      "Mathematician": "Susruta(Permutations and combinations) ",
+      "Contribution": "First known use of Permutations and combinations was by him in his medicinal work  Susruta Samhitha "
+   },
+   {
+      "Mathematician": "John Graunt(Father of vital statistics) ",
+      "Contribution": "Gave first life table, giving probabilities of all ages"
+   },
+   {
+      "Mathematician": "Sir William Petty ",
+      "Contribution": "Developed efficient methods to survey the land.His work in political arithmetic laid the foundation for modern census techniques. "
+   },
+   {
+      "Mathematician": "Andrei Nikoleavich Kolmogorov(probabilitist)",
+      "Contribution": "He laid the set theoretic foundation to probability in his classical work  Foundations of theory of probability  "
+   },
+   {
+      "Mathematician": "Simeon Denis Poisson ",
+      "Contribution": "Derived Poisson distribution "
+   },
+   {
+      "Mathematician": "Saint Vincent (log series) ",
+      "Contribution": "Discovered logarithmic series"
+   },
+   {
+      "Mathematician": "Nicolus Mercator ",
+      "Contribution": "Wrote on astronomy, Trigonometry, the method of computing algorithms besides editing Euclid's elements. Gave logarithmic series by the name Mercator series "
+   },
+   {
+      "Mathematician": "Thomas Bayes ",
+      "Contribution": "Well known for Bayes theorem. Thomas Bayes has greatly contributed to the field of probability and statistics. there has been speculation that he was taught by de Moivre"
+   },
+   {
+      "Mathematician": "Menachmus",
+      "Contribution": "known for his friendship with the philosopher Plato and for his apparent discovery of conic sections and his solution to the then-long-standing problem of doubling the cube using the parabola and hyperbola."
+   },
+   {
+      "Mathematician": "Aristotle ",
+      "Contribution": "He was well educated by the best teachers of the time  namely Plato. He used Contemporary mathematics  as a model for his philosophy of science and for some important techniques"
+   },
+   {
+      "Mathematician": "Ptolemy ",
+      "Contribution": "Ptolemy has a prominent place in the history of mathematics primarily because of the mathematical methods he applied to astronomical problems. "
+   },
+   {
+      "Mathematician": "Apollonius",
+      "Contribution": "Worked on conic sections and gave names for them(ellipse,parabola...).He explained properties of symptoms and conjugate hyperbolas"
+   },
+   {
+      "Mathematician": "Galilei Galilieo",
+      "Contribution": "Galileo was one of the first modern thinkers to clearly state that the laws of nature are mathematical.He understood the parabola, both in terms of conic sections and in terms of the ordinate (y) varying as the square of the abscissa (x)."
+   },
+   {
+      "Mathematician": "Archimedes of Syracuse",
+      "Contribution": "the idea of limit was first known by him. "
+   },
+   {
+      "Mathematician": "Girard Desargues",
+      "Contribution": "His Contributions in geometry have been phenomenal;fundamental theorems on involution, harmonic ranges, horology, poles and Polars and principles of per-spectivity in projective geometry"
+   },
+   {
+      "Mathematician": "Pappus ",
+      "Contribution": "Pappus of Alexandria is the last of the great Greek geometers and one of his theorems is cited as the basis of modern projective geometry."
+   },
+   {
+      "Mathematician": "John Wallis",
+      "Contribution": "Wrote extensively on number of areas.One of the first to discuss conics as curves of second degree equations."
+   },
+   {
+      "Mathematician": "Claude Alexis Clairaut",
+      "Contribution": "Wrote various papers on the orbits of moon and planets particularly on the path of Halley's Comet"
+   },
+   {
+      "Mathematician": "Sophus Lie",
+      "Contribution": "He largely created the theory of continuous symmetry and applied it to the study of geometry and differential equations."
+   },
+   {
+      "Mathematician": "William Rowan Hamilton ",
+      "Contribution": "Considered complex number as an ordered pair of real no. s(this helped to avoid use of imaginary no.s)"
+   },
+   {
+      "Mathematician": "Diophantus",
+      "Contribution": "Diophantus wrote Arithmetica which is the most prominent work on Algebra in Greek Mathematics."
+   },
+   {
+      "Mathematician": "Omar Khayyam ",
+      "Contribution": "He became established as one of the major mathematicians and astronomers of the Islamic Golden Age. "
+   },
+   {
+      "Mathematician": "C. R. Rao",
+      "Contribution": "He is a prominent Indian Mathematical Statistician best known for his theory of estimation.  His works include the 'Rao-Blackwellisation', 'Fischer -Rao theorem, Rao's Score Test and 'Cramer -Rao inequality'."
+   },
+   {
+      "Mathematician": "Henry Segerman ",
+      "Contribution": "A mathematician and a mathematical artist.He wrote a book called  Visualizing mathematics by 3d printing  ."
+   },
+   {
+      "Mathematician": "Francis Su",
+      "Contribution": "Su is serving as President of the Mathematical Association of America from 2015�2017.Su has received multiple awards from the MAA, including the Haimo Award for distinguished teaching."
+   },
+   {
+      "Mathematician": "Liu Hui",
+      "Contribution": "Liu Hui expressed all of his mathematical results in the form of decimal fractions (using metrological units), "
+   },
+   {
+      "Mathematician": "Johannes Kepler",
+      "Contribution": "At his time,there was a strong division between astronomy (a branch of mathematics within the liberal arts) and physics (a branch of natural philosophy)"
+   },
+   {
+      "Mathematician": "Alan Turing ",
+      "Contribution": "Turing is widely considered to be the father of theoretical computer science and artificial intelligence."
+   },
+   {
+      "Mathematician": "Kurt Godel",
+      "Contribution": "Considered along with Aristotle, Alfred Tarski and Gottlob Frege to be one of the most significant logicians in history"
+   },
+   {
+      "Mathematician": "Henry Poincare",
+      "Contribution": "one of the greatest mathematicians and mathematical physicists at the end of 19th century. He made a series of profound innovations in geometry, the theory of differential equations,The philosophy of mathematics. Known for pendulum clock, wave theory,Huygens engine. "
+   },
+   {
+      "Mathematician": "Christiaan Huygens",
+      "Contribution": "Huygens has been called the leading European natural philosopher between Descartes and Newton."
+   },
+   {
+      "Mathematician": "Benjamin Banneker",
+      "Contribution": "Banneker made astronomical calculations that predicted eclipses and planetary conjunctions for inclusion in an ephemeris for the year of 1792."
+   },
+   {
+      "Mathematician": "Sophie Germain",
+      "Contribution": " French mathematician who contributed notably to the study of acoustics, elasticity, and the theory of numbers."
+   },
+   {
+      "Mathematician": "Amalie Emmy Noether",
+      "Contribution": "German mathematician whose innovations in higher algebra gained her recognition as the most creative abstract algebraist of modern times"
+   },
+   {
+      "Mathematician": "Girolamo Cardano",
+      "Contribution": " He was one of the most influential mathematicians of the Renaissance, and was one of the key figures in the foundation of probability and the earliest introducer of the binomial coefficients and the binomial theorem in the western world. "
+   },
+   {
+      "Mathematician": "John Horton Conway",
+      "Contribution": "an English mathematician active in the theory of finite groups, knot theory, number theory, combinatorial game theory and coding theory. He has also contributed to many branches of recreational mathematics"
+   },
+   {
+      "Mathematician": "Terence tao",
+      "Contribution": " Tao was a co-recipient of the 2006 Fields Medal and the 2014 Breakthrough Prize in Mathematics."
+   },
+   {
+      "Mathematician": "Ada Lovelace",
+      "Contribution": "She met Babbage who was busy working on developing his 'analytical engine' - which was essentially a programmable computer.Ada began to extend and develop this mathematical work and even wrote what is now considered to be the first computer programme."
+   },
+   {
+      "Mathematician": "Florence Nightingale",
+      "Contribution": "Florence Nightingale referred to as 'the lady with the lamp'. She is famous for being a nurse who was full of compassion and the founder of modern nursing."
+   },
+   {
+      "Mathematician": "Mariyam Mirzakhani",
+      "Contribution": "In 2014 Maryam Mirzakhani was the first ever female mathematician to receive the Fields Medal, which is sometimes described as a Nobel prize for mathematics."
+   },
+   {
+      "Mathematician": "Baudhayana ",
+      "Contribution": "Baudhayana discovered the Pythagoras Theorem around 1000 years before Pythagoras was even born."
+   },
+   {
+      "Mathematician": "Julius Plucker",
+      "Contribution": "Made fundamental Contributions to analytic and projective geometries. His first major work  Analytischgeometrische Eniwickelungen  has a discussion of plane, the line and conic sections,facts related to solid analytic geometry. "
+   },
+   {
+      "Mathematician": "Leonid Kantorovich",
+      "Contribution": "A Soviet mathematician who was regarded as the founder of linear programming. He was the winner of the Stalin Prize in 1949 and the Nobel Memorial Prize in Economics in 1975."
+   } ]
+}
+];
+                    var number = Math.ceil( Math.random() * 100 );
+                    document.title = people[0]['Mathematicians'][number]['Mathematician'];
+                    $('meta[name=description]').remove();
+                    $('head').append('<meta name="description" content="' + people[0]['Mathematicians'][number]['Contribution'] + '">');
+                });
+    </script>
 </head>
-<script type="text/javascript" src="jquery.min.js"> </script>
 
-<script>
-
-    $(function() {
-
-
-   var people = [];
-
-   $.ajax({
-  dataType: "json",
-  url: 'axiom-8ca22-export.json',
-  success: function(data) {
-       $.each(data.Mathematicians, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.Mathematician + "</td>" +
-           "<td>" + f.Contribution + "</td></tr>";
-           $(tblRow).appendTo("#userdata tbody");
-     });
-       var number=Math.round(Math.random()*100);
-    document.title= data.Mathematicians[number].Mathematician;
-    $('meta[name=description]').remove();
-    $('head').append( '<meta name="description" content="'+data.Mathematicians[number].Contribution+'">' );
- }});
-
-});
-</script>
-<!-- <script type="text/javascript">window.location.href="https://fb.com/axiom.nitr"</script> -->
-</head>
+<body>
