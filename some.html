@@ -312,9 +312,9 @@
                 }]
             }];
             var number = Math.ceil(Math.random() * 100);
-            // document.title = people[0]['Mathematicians'][number]['Mathematician'];
+             var title = people[0]['Mathematicians'][number]['Mathematician'];
             $('meta[name=description]').remove();
-            $('head').append('<title>'+people[0]['Mathematicians'][number]['Mathematician']+'</title><meta name="description" content="' + people[0]['Mathematicians'][number]['Contribution'] + '">');
+            $('head').append('<title>'+ title +'</title><meta name="description" content="' + people[0]['Mathematicians'][number]['Contribution'] + '">');
         });
     </script>
 </head>
