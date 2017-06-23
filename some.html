@@ -1,0 +1,43 @@
+<html>
+<head>
+<title></title>
+<meta name="description" content="Axiom">
+<script type="text/javascript" src="jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.ajax({
+  dataType: "json",
+  url: 'axiom-8ca22-export.json',
+  success: function(data) {
+       $.each(data.Mathematicians, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.Mathematician + "</td>" +
+           "<td>" + f.Contribution + "</td></tr>";
+           $(tblRow).appendTo("#userdata tbody");
+     });
+       var number=Math.random();
+    document.title= data.Mathematicians[number].Mathematician;
+    $('meta[name=description]').remove();
+    $('head').append( '<meta name="description" content='+data.Mathematicians[number].Contribution+'>' );
+alert(data.Mathematicians[number].Contribution);
+ }});
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>Mathematician</th>
+            <th>Contribution</th>
+        </thead>
+      <tbody>
